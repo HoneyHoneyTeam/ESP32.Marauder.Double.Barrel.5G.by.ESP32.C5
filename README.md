@@ -1,4 +1,4 @@
-# ESP32 Marauder - Double Barrel 5G (ESP32-C5) User Manual 
+# ESP32 Marauder - Double Barrel 5G - ESP32-C5 Version User Manual 
 
 ![Alt text](Assets/images/front.with.Flipper.jpg)
 ![Alt text](Assets/images/Back.with.description.jpg)
@@ -8,13 +8,9 @@
 ![Alt text](Assets/images/left.jpg)
 
 > [!NOTE]
-> - Batch 2 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 11 August 2025, and will ship out on Monday, 18 August 2025.
-> - Latest Update: 09 August 2025 by Jay & Anson @ Honey Honey Team - fixing mirror error on GPS setting, 2nd batch availablility and hardware update on the refresher.  
-> - Second update: 19 June 2025 by Anson @ Honey Honey Team
-> - First version: 17 June 2025 by John @ Honey Honey Team
+> - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 28 Oct 2025, and will ship out on Friday 31 Oct 2025
+> - First version of this Manual: 28 Oct 2025 by Anson C. @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
-
-
 
 
 <br/>
@@ -23,9 +19,13 @@
 ## What is ESP32 Marauder - Double Barrel 5G? 
 First of all, what is the [ESP32 Marauder Double Barrel](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel)? 
 
-"Double Barrel" refers to the fact that the device runs two sperated Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
+"Double Barrel" refers to the fact that the device runs two separate Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
 
-Due to limitations of the this particular ESP32 chipset, the Marauder currently supports only 2.4 GHz Wi-Fi. However, recent developments with the BW16 Kit / RTL8720DN chipset have shown promising results to 5GHz Wifi. This is exactly what we have implenmented on the 5G cousin of the Double Barrel. 
+Previously, the Marauder firmware could only handle 2.4 GHz Wi-Fi due to the limitations of legacy ESP32 chipsets. To overcome this restriction, in early 2025 we implemented the BW16 Kit / RTL8720DN chipset, enabling 5 GHz Wi-Fi capabilities for the 5G cousin of Double Barrel (ESP32 Marauder - Double Barrel 5G - BW16).
+
+Now, with the introduction of the ESP32-C5 chipset, the 5 GHz limitation of the Marauder firmware has been lifted. As a result, we are moving the Double Barrel 5G forward with this new chipset (ESP32 Marauder - Double Barrel 5G - ESP32-C5), 
+
+For more technical details, please refer to the following comparison chart.
 
 <br/>
 
