@@ -1,4 +1,4 @@
-# ESP32 Marauder - Double Barrel 5G - ESP32-C5 Version User Manual 
+# ESP32 Marauder - Double Barrel 5G - ESP32-C5 User Manual 
 
 ![Alt text](Assets/images/White.Front.jpg)
 ![Alt text](Assets/images/White.Back.jpg)
@@ -8,7 +8,7 @@
 ![Alt text](Assets/images/Black.Back.Without.jpg)
 
 > [!NOTE]
-> - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 28 Oct 2025, and will ship out on Friday 31 Oct 2025
+> - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
 > - First version of this Manual: 28 Oct 2025 by Anson C. @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
