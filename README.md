@@ -32,7 +32,7 @@ For more technical details, please refer to the following comparison chart.
 
 To date, there are three main iterations of the Double Barrel, primarily distinguished by the chipset each version uses.
 
-![Alt text](Assets/images/left.jpg)
+![Alt text](Assets/images/Comparison.jpg)
 
 ## Specification of the ESP32 Marauder Double Barrel 5G
 
