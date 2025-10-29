@@ -12,7 +12,6 @@
 > - First version of this Manual: 28 Oct 2025 by Anson C. @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
-
 <br/>
 
 
@@ -29,6 +28,12 @@ For more technical details, please refer to the following comparison chart.
 
 <br/>
 
+## Technical specification comparison between Double Barrel models
+
+To date, there are three main iterations of the Double Barrel, primarily distinguished by the chipset each version uses.
+
+![Alt text](Assets/images/left.jpg)
+
 ## Specification of the ESP32 Marauder Double Barrel 5G
 
 
@@ -38,17 +43,16 @@ For more technical details, please refer to the following comparison chart.
 	- An 800mAh embedded battery, 
 	- Onboard GPS access
 	- Micro SD card slot, for updating firmware and data storage
-	- For Batch one unit, 4pin GPIO (3.3V/Tx/Rx/Gnd)
- 	- From Batch Two, 4Pins GPIO have been replaced by USB-C port 
+    - ESP32 refresher embedded, alternative way for updating firmware	
+	- USB-C port for charging and access to ESP32 refresher
   	- This part of the device can funcation as a standalone device (i.e., you can use it without Flipper Zero).
    	- The hardware version of this marauder is V6
 
-- **The BW16 / RTL8720DN chipset is controlled by the Flipper Zero, it comes with**
-  	- BW16 / RTL8720DN chipset with an external antenna
+- **ESP32-C5 chipset is controlled by the Flipper Zero, it comes with**
+  	- ESP32-C5 chipset with an external antenna
   	- Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication
-  	- For Batch one Unit: 4pins GPIO 4pin GPIO (3.3V/Tx/Rx/Gnd) for firmware update, or switch different firmware
-  	- From Batch Two, 4Pins GPIO have been replaced by USB-C port 
-  	- FAP <Flipper App Package> installation is needed, aka copying the FAP into Flipper SD card
+  	- USB-C port for updating firmware
+  	- Alternatively, firmware can be update via Flipper
   	- More info regarding the funcationality, please check <How to upgrade BW16 firmware > section of this manual
 
 - **Others:**
@@ -56,7 +60,6 @@ For more technical details, please refer to the following comparison chart.
  	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
   	- GPS Chipset. GPS data is accessible to both Marauders.
   	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
-  	- Toggle on the left for switching GPS power supply ( either by Flipper or device battery)
   	- Full 3D-Printed Enclosure/Case is also included.
 
 
@@ -90,17 +93,14 @@ For more technical details, please refer to the following comparison chart.
 
 <br/>
 
-### The BW16 part
+### The ESP32-C5 part
 
-- The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16.
+- The ESP32-C5 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16.
 	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
 	3. Select **Extra 15, 16**.
 
-- Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from [here](Assets/5G.fap) (Right Click and Save AS)
- 	2. Copy the file into <**you SD card/Apps/GPIO**> directory. You could do so via a Micro SD card reader, or via qFlipper App. 
-  	3. Put the SD card back into Flipper, and you should be able to find an APP call **5G wifi Deauth** in through Flipper manual **APPS** -> **GPIO** -> **5G wifi deauth**
+- After this, you could use Marauder as usual. Those 5G WiFi should be accessable from this point forward.  
   	   
 <br/>
 
@@ -148,7 +148,7 @@ For more technical details, please refer to the following comparison chart.
 <summary> Click the Triangle for more details</summary>
 
 
-**Notes: Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported, which is understandable**
+**Notes: Based on our testing < 18.June.2025 >, Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported, which is understandable**
 
 1. [An ESP32 programmer](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G) is included in the package. Connecting the programmer to the GPIO port located in the lower-right corner of the device, as shown in the following picture.
 
@@ -170,74 +170,41 @@ For more technical details, please refer to the following comparison chart.
 </details>
 </br>
 
-## How to upgrade BW16 firmware 
+## How to upgrade ESP32-C5 firmware 
 <details>
 <summary> Click the Triangle for more details</summary>
 <br/>
-1. When we shipped out the Double Barrel 5G, the BW16 was pre-loaded with one of the 5G firmware versions. This firmware is compatible with the FAP call [5G WiFi deauth](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel-5G/blob/main/Assets/5G.fap).
+- When we shipped out the Double Barrel 5G, the ESP32-C5 chipset was pre-loaded Marauder firmware <esp32c5_devkit.bin>. It is plug and play for most of the users. 
 
-2. Regarding the effectiveness and functionality of the BW16 kit on 5G WiFi networks: it works and is quite effective. However, its functionality is limited to scanning and deauthentication. There may be other binaries or firmware options available, such as Evil Portal or CLI support, but due to time constraints and limited manpower, we haven't been able to test them all. That said, we believe the open-source community will likely develop additional tools, as around 90% of the code is compatible and reuseable.
+- If you would like to update. You could follow the following procedure.
 
-3. If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
+1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) into your PC/Mac
+2. 
+3. Using the Metal Stylus, click and hold the boot bottom via the hole in the back (Mark 1)
+4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Mark B>
+5. 
 
-4. **The Delfyrtl GitHub page has a clear description of how to load the firmware, but we will be updating our own version of the loading procedure soon. Please check back in a few days for the latest instructions.  - 19.06.2025 by Anson**
+
+6. If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
+
+
 
 </details>
 
 <br/>
 
-## Could the Double Barrel 5G work with other Flipper Zero firmware, rather than Momentum?
+## Could the Double Barrel 5G work with other Flipper Zero firmware besides Momentum? <Update on Aug 2025>
 
 <details>
 <summary> Click the Triangle for more details</summary>
 <br/>
-We believe the 5G FAP is compatible with most firmware versions.
+We believe the Double Barrel 5G is compatible with most firmware versions.
 
 However, there is one caveat. When we checked the latest Unleashed firmware (as of 10 July 2025), we were unable to locate the UART setting for changing the ESP32/8266 GPIO pins (from the default 13/14 to 15/16) in the Unleashed documentation. It’s possible this setting is referred to differently in the Unleashed firmware.
 
 We worked around this by first using a Flipper running the Momentum firmware, where we configured the GPIO pins to 15/16. Then, we used the web installer to flash the Unleashed firmware (version 081). In this case, the update process preserved the existing GPIO configuration.
 
 If you’re planning to use Unleashed with the Double Barrel 5G, this could be one way to get it working.
-
-</details>
-
-<br/>
-
-## What we shipout unit with Marauder 1.4.6，even the latest Marauder is 1.8.2 or further - Update at 09 August 2025?
-
-<details>
-<summary> Click the Triangle for more details</summary>
-<br/>
-
-The only reason is that Marauder changed how the touchscreen works after version 1.4.6.
-
-In 1.4.6, it functions like a normal touchscreen.
-
-After 1.4.6, the touchscreen is divided into three sections, and each section acts as one big button:
-	
- 	Top → UP
-    Middle → ENTER
-    Bottom → DOWN
-
-This change was confusing and counter-intuitive for new users at first, and many thought the device was malfunctioning — which led to a flood of tech support requests.
-
-For that reason, we ship units with version 1.4.6 by default.
-
-That said, you’re free to upgrade or downgrade the Marauder at any time, as long as you download the V6 version of the firmware.
-
-</details>
-
-<br/>
-
-## What is the main difference between Batch one machine and Batch two units - Update at 09 August 2025?
-
-<details>
-<summary> Click the Triangle for more details</summary>
-<br/>
-
-The only main difference is that the 4-pin GPIO connector has been replaced with a USB-C port. This means users can now use a standard USB-C data cable, rather than a specific refresher tool, to enter the chipset’s bootloader mode.
-
-As a result, the refresher is no longer required for reviving the device or upgrading the firmware.
 
 </details>
 
