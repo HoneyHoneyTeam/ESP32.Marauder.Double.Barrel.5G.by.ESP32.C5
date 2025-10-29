@@ -38,34 +38,30 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 
 - **The first Marauder comes with:**
-	- ESP32 chipset with an external antenna,
-	- A 2.8-inch touch screen,
-	- An 800mAh embedded battery, 
+	- ESP32 chipset with an external antenna
+	- A 2.8-inch touch screen
+	- An 800mAh embedded battery
 	- Onboard GPS access
-	- Micro SD card slot, for updating firmware and data storage
+	- Micro SD card slot, for updating firmware and data storage (Port C)
     - ESP32 refresher embedded, alternative way for updating firmware	
-	- USB-C port for charging and access to ESP32 refresher
+	- USB-C port for charging and access to ESP32 refresher (Port A)
   	- This part of the device can funcation as a standalone device (i.e., you can use it without Flipper Zero).
    	- The hardware version of this marauder is V6
 
 - **ESP32-C5 chipset is controlled by the Flipper Zero, it comes with**
   	- ESP32-C5 chipset with an external antenna
-  	- Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication
-  	- USB-C port for updating firmware
-  	- Alternatively, firmware can be update via Flipper
-  	- More info regarding the funcationality, please check <How to upgrade BW16 firmware > section of this manual
+  	- Pre-loaded with Marauder firmware
+  	- ESP32 fresher function has been embedded. Updating firmware can be used via USB-C port directly (Port B)
 
 - **Others:**
-	- USB-C Ports for onboard battery charging (A).
+	- USB-C Ports for onboard battery charging (Port A).
  	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
   	- GPS Chipset. GPS data is accessible to both Marauders.
   	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
   	- Full 3D-Printed Enclosure/Case is also included.
 
-
 <br/>
 
-![Alt text](Assets/images/In.Comparison.png)
 
 ## Pre-flight Check / Settings Before First Use 
 
@@ -107,15 +103,12 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 ### GPS
 
 - To use the GPS function of Double Barrel 5G via the Flipper Zero, please see the steps below.
-  	1. Set the **bottom switch** on the left side of the Double Barrel 5G (labeled <**C**>) to the **DOWN** position.
-		- UP position: GPS is powered by the Double Barrel's onboard 800mAh battery.
-  		- DOWN position: GPS is powered by the Flipper Zero's battery.
-  	2. On your Flipper Zero, navigate to the main menu.
-	3. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **NWEA GPS UART**.
-	4. Select **Extra 15, 16**.
-	5. If **ESP32/8266 UART** setting is also set as **Extra 15, 16**, please change to **Default 13, 14**. The reason is that only one function can use UART pins 15 and 16 at a time. If both the ESP32 and the GPS are set to use UART 15 and 16, it may cause a functional conflict.
-	6. For testing purpose, Go to **Apps** -> **GPIO** -> **[NMEA]GPS**.
-	7. Acquiring a GPS signal might take up to a minute. The exact time depends on your location and how open or obstructed the sky is.
+  	1. On your Flipper Zero, navigate to the main menu.
+	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **NWEA GPS UART**.
+	3. Select **Extra 15, 16**.
+	4. If **ESP32/8266 UART** setting is also set as **Extra 15, 16**, please change to **Default 13, 14**. The reason is that only one function can use UART pins 15 and 16 at a time. If both the ESP32 and the GPS are set to use UART 15 and 16, it may cause a functional conflict.
+	5. For testing purpose, Go to **Apps** -> **GPIO** -> **[NMEA]GPS**.
+	6. Acquiring a GPS signal might take up to a minute. The exact time depends on your location and how open or obstructed the sky is.
 
 
 <br/>
@@ -178,12 +171,11 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 - If you would like to update. You could follow the following procedure.
 
-1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
-2. Uploading the firmware can be via [ESPtools](https://docs.espressif.com/projects/esptool/en/latest/esp32c5/index.html) from Espressif or Python script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
+1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
+2. Uploading the firmware into the ESP32-C5 shipset can be via [flash_download_tool] from Espressif or Python script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
 3. Using the Metal Stylus, click and hold the boot bottom via the hole in the back (Mark 1)
-4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Mark B>
-5. 
-
+4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Port B>
+5. Connect the USB-C into the PC/Mac, then hit Flash. Then let the script run its course. 
 
 
 </details>
