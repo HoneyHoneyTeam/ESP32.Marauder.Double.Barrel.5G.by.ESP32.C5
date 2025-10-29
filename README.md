@@ -178,14 +178,11 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 - If you would like to update. You could follow the following procedure.
 
-1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
-2. Uploading the firmware can be via ESPtools or Python script <C5_Py_Flasher>, more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
+1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
+2. Uploading the firmware can be via [ESPtools](https://docs.espressif.com/projects/esptool/en/latest/esp32c5/index.html) from Espressif or Python script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
 3. Using the Metal Stylus, click and hold the boot bottom via the hole in the back (Mark 1)
 4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Mark B>
 5. 
-
-
-6. If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
 
 
 
