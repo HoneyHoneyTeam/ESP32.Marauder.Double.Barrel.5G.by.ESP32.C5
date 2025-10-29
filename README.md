@@ -1,11 +1,11 @@
 # ESP32 Marauder - Double Barrel 5G - ESP32-C5 Version User Manual 
 
-![Alt text](Assets/images/front.with.Flipper.jpg)
-![Alt text](Assets/images/Back.with.description.jpg)
-![Alt text](Assets/images/standalone.Bruce.with.description.jpg)
-![Alt text](Assets/images/top.jpg)
-![Alt text](Assets/images/right.jpg)
-![Alt text](Assets/images/left.jpg)
+![Alt text](Assets/images/White.Front.jpg)
+![Alt text](Assets/images/White.Back.jpg)
+![Alt text](Assets/images/Black.Front.jpg)
+![Alt text](Assets/images/Black.Back.jpg)
+![Alt text](Assets/images/Black.Front.Without.jpg)
+![Alt text](Assets/images/Black.Back.Without.jpg)
 
 > [!NOTE]
 > - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 28 Oct 2025, and will ship out on Friday 31 Oct 2025
