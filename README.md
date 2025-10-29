@@ -93,7 +93,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 <br/>
 
-### The ESP32-C5 part
+### 2nd set Marauder - ESP32-C5
 
 - The ESP32-C5 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16.
 	1. On your Flipper Zero, navigate to the main menu.
@@ -178,8 +178,8 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 - If you would like to update. You could follow the following procedure.
 
-1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) into your PC/Mac
-2. 
+1. Download the ESP32.C5 firmware [Download link](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
+2. Uploading the firmware can be via ESPtools or Python script <C5_Py_Flasher>, more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
 3. Using the Metal Stylus, click and hold the boot bottom via the hole in the back (Mark 1)
 4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Mark B>
 5. 
