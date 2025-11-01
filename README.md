@@ -171,13 +171,14 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 - If you would like to update. You could follow the following procedure.
 
-**The short version, for those have experience on using Flash Download Tool from Espressif. **
+**A short version for users experienced with Espressif’s Flash Download Tool.**
+
 1. Download all the firmware files and set them up as shown in the pictures.
 2. While using the metal stylus included in the package to press and hold the button inside the hole marked as “1”, connect the 5G unit to your PC.
 3. Next,  click “Start” and let the tool complete the process.
 That’s it — done!
 
-**The thorough version in a step by step fasion. **
+**The thorough version in a step-by-step fashion.**
 
 1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko). Alternative link is [here]()
 2. The firmware can be uploaded to the ESP32-C5 chipset using either "Flash Download Tool" provided by Espressif, or via a Python-based flashing script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) In this manual, we will use the “Flash Download Tool” as an example.
