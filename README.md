@@ -9,6 +9,7 @@
 
 > [!NOTE]
 > - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
+> - Two major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware — have been added on 01 Nov 2025 by John @ Honey Honey Team.
 > - First version of this Manual: 28 Oct 2025 by Anson C. @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
