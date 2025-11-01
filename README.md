@@ -171,12 +171,27 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 - If you would like to update. You could follow the following procedure.
 
-1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko)
-2. Uploading the firmware into the ESP32-C5 shipset can be via [flash_download_tool] from Espressif or Python script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) 
-3. Using the Metal Stylus, click and hold the boot bottom via the hole in the back (Mark 1)
-4. while holding on the boot bottom, connecting the 5G unit with PC / Mac via USB-C port on the left side of the unit <Port B>
-5. Connect the USB-C into the PC/Mac, then hit Flash. Then let the script run its course. 
+**The short version, for those have experience on using Flash Download Tool from Espressif. **
+1. Download all the firmware files and set them up as shown in the pictures.
+2. While using the metal stylus included in the package to press and hold the button inside the hole marked as “1”, connect the 5G unit to your PC.
+3. Next,  click “Start” and let the tool complete the process.
+That’s it — done!
 
+**The thorough version in a step by step fasion. **
+
+1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko). Alternative link is [here]()
+2. The firmware can be uploaded to the ESP32-C5 chipset using either "Flash Download Tool" provided by Espressif, or via a Python-based flashing script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) In this manual, we will use the “Flash Download Tool” as an example.
+3. Setup the tool as showed in the following two picture.
+   <br/>
+   ![Alt text](Assets/images/FlashDownloadTool.SS.0.jpg)
+   <br/>
+   ![Alt text](Assets/images/FlashDownloadTool.SS.1.jpg)
+   
+5. Use the metal stylus included in the package to press and hold the boot button through the hole on the back of the unit, which is marked as “1”.
+6. While holding down the boot button, connect the 5G unit to your PC or Mac using the USB-C port located on the left side of the unit, marked as “B.”
+These two actions must be performed simultaneously — pressing and holding the boot button while powering on is the standard procedure for entering bootloader mode on the device.
+7. Next, click “Flash.” Allow the application to run for one seconds until the process is complete. When finished, the screen should appear as shown in the following image.
+   ![Alt text](Assets/images/FlashDownloadTool.SS.done.jpg)
 
 </details>
 
