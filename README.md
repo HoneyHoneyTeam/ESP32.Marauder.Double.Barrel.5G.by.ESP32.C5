@@ -176,11 +176,7 @@ Before starting, please download the necessary software and files. In this guide
 
 3. Return to Flash Download Tools, select the **COM** in the lower right cornor (the one marked with 3 in the picture) and click Start.
 
-There is usually one UART device in most of the modern PC. If you could not see the UART device aka the programmer, you might need to install [the driver](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/blob/main/Assets/images/CP210x.chipset.driver.for.windows.zip) for it, and re-start the program again. 
-
-
 4. If everything goes as planned, the software will handle the rest in a minute.
-
 
 </details>
 </br>
