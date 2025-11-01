@@ -141,11 +141,15 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 <details>
 <summary> Click the Triangle for more details   </summary>
 
+<br/>
 If a wrong firmware or corrupted firmware files is used, the screen of the Unit will stay black when it turns on. We call it is bricked. Here is the "CPR" procedure to revise the device. 
+
+
+### Downloading the necessary files & App
 
 Before starting, please download the necessary software and files. In this guide, we will be performing the procedure on Microsoft Windows 11. 
 
-- Flash Download tools from [Espressif](https://www.espressif.com/en/support/download/other-tools)
+- [Flash Download tools from Espressif](https://www.espressif.com/en/support/download/other-tools)
 - Four Marauder files from [the Marauder GitHub](https://github.com/justcallmekoko/ESP32Marauder/wiki/update-firmware), from the "ESP32 Marauder v4, v6, Kit, Mini" column:
 
 1. Bootloader
@@ -155,7 +159,9 @@ Before starting, please download the necessary software and files. In this guide
 
 ![Alt text](Assets/images/DownloadingFiles.png)
 
-### Ready to rock
+<br/>
+
+### Ready to go
 
 1. When all the files are downloaded and ready, run "**Flash Download Tools**" and set the options as shown in the following two pictures.
    
@@ -165,18 +171,13 @@ Before starting, please download the necessary software and files. In this guide
 
 <br/>
 
-2. Next, while **holding down the boot button (marked as "2" on the back of the device)**, use a pin or the metal stylus included with the Double Barrel to connect the unit to your PC or Mac via the USB-C port on top of the device, which is marked as "A". These two actions must be performed simultaneously — pressing and holding the boot button while connecting the device is the standard procedure for entering bootloader mode.
+2. Next, while **holding down the boot button (marked as "2" on the back of the device)**, with the metal stylus included with the Double Barrel. Meanwhile connect the unit to your PC or Mac via the USB-C port on top of the device, which is marked as "A". These two actions must be performed simultaneously — pressing and holding the boot button while connecting the device is the standard procedure for entering bootloader mode.
 
-
-<br/>
 
 3. Return to Flash Download Tools, select the **COM** in the lower right cornor (the one marked with 3 in the picture) and click Start.
 
 There is usually one UART device in most of the modern PC. If you could not see the UART device aka the programmer, you might need to install [the driver](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/blob/main/Assets/images/CP210x.chipset.driver.for.windows.zip) for it, and re-start the program again. 
 
-![Alt text](Assets/images/Finished.jpg)
-
-<br/>
 
 4. If everything goes as planned, the software will handle the rest in a minute.
 
