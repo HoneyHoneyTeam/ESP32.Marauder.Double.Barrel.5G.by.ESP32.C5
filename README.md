@@ -9,8 +9,11 @@
 
 > [!NOTE]
 > - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
-> - Two major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware — have been added on 01 Nov 2025 by John @ Honey Honey Team.
-> - First version of this Manual: 28 Oct 2025 by Anson C. @ Honey Honey Team
+>   
+> - 03 Nov 2025 - One quick update - Marauder 1.8.7 version with system freeze when using Micro SD card and how to solve it. -  Anson C. @ Honey Honey Team. 
+> - 01 Nov 2025 - Two major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware - by John @ Honey Honey Team.
+> - 28 Oct 2025 - First version of this Manual - by Anson C. @ Honey Honey Team
+> 
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
 <br/>
@@ -138,7 +141,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 </br>
 
 
-## How to revise a brick device
+## How to revise a brick device (Last updated on 03 Nov 2025)
 <details>
 <summary> Click the Triangle for more details   </summary>
 
@@ -164,7 +167,7 @@ Before starting, please download the necessary software and files. In this guide
 
 ### Ready to go
 
-1. When all the files are downloaded and ready, run "**Flash Download Tools**" and set the options as shown in the following two pictures.
+1. When all the files are downloaded and ready, run "**Flash Download Tools**" and set the options as shown in the following two pictures. 
    
 ![Alt text](Assets/images/ESP32.setting.png)
 
@@ -172,8 +175,9 @@ Before starting, please download the necessary software and files. In this guide
 
 <br/>
 
-2. Next, while **holding down the boot button (marked as "2" on the back of the device)**, with the metal stylus included with the Double Barrel. Meanwhile connect the unit to your PC or Mac via the USB-C port on top of the device, which is marked as "A". These two actions must be performed simultaneously — pressing and holding the boot button while connecting the device is the standard procedure for entering bootloader mode.
+2. Connecting the unit to your PC or Mac via the USB-C port on top of the device, which is marked as "A". Make sure the USB-C cable is capable for data transfer, If you are not sure what is that mean, use the cable coming with the package. 
 
+2. Next,  while **holding down the boot button (marked as "2" on the back of the device)**, with the metal stylus included with the Double Barrel, then turn on the device with on/off swith (marked as "C"). These two actions must be performed simultaneously 
 
 3. Return to Flash Download Tools, select the **COM** in the lower right cornor (the one marked with 3 in the picture) and click Start.
 
@@ -227,7 +231,7 @@ That’s it — done!
 
 **The thorough version in a step-by-step fashion.**
 
-1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko). Alternative link is [here]()
+1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko). 
 2. The firmware can be uploaded to the ESP32-C5 chipset using either "Flash Download Tool" provided by Espressif, or via a Python-based flashing script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) In this manual, we will use the “Flash Download Tool” as an example.
 3. Setup the tool as showed in the following two picture.
    <br/>
@@ -235,10 +239,10 @@ That’s it — done!
    <br/>
    ![Alt text](Assets/images/FlashDownloadTool.SS.1.jpg)
    
-5. Use the metal stylus included in the package to press and hold the boot button through the hole on the back of the unit, which is marked as “1”.
-6. While holding down the boot button, connect the 5G unit to your PC or Mac using the USB-C port located on the left side of the unit, marked as “B.”
+4. Use the metal stylus included in the package to press and hold the boot button through the hole on the back of the unit, which is marked as “1”.
+5. While holding down the boot button, connect the 5G unit to your PC or Mac using the USB-C port located on the left side of the unit, marked as “B.”
 These two actions must be performed simultaneously — pressing and holding the boot button while powering on is the standard procedure for entering bootloader mode on the device.
-7. Next, click “Flash.” Allow the application to run for one seconds until the process is complete. When finished, the screen should appear as shown in the following image.
+6. Next, click “Flash.” Allow the application to run for one seconds until the process is complete. When finished, the screen should appear as shown in the following image.
    ![Alt text](Assets/images/FlashDownloadTool.SS.done.jpg)
 
 </details>
@@ -261,6 +265,25 @@ If you’re planning to use Unleashed with the Double Barrel 5G, this could be o
 </details>
 
 <br/>
+
+
+## Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions <Updated: 03/11/2025>
+
+<details>
+<summary> Click the Triangle for more details</summary>
+<br/>
+We recently discovered that when using a micro SD card with Marauder version 1.8.7, the system may freeze and become unresponsive to touch input. We currently suspect this issue is related to the 1.8.7 firmware.
+
+To resolve the problem, please avoid using this specific version of Marauder. You can either upgrade to version 1.8.9 or downgrade to another stable version. Unfortunately, upgrading via micro SD is not possible due to the freezing issue. The upgrade must be performed using a USB-C connection and the Flash Download Tool.
+
+For more details, please refer to the section “How to Revive a Bricked Device” in this manual.
+
+An email has been sent to all users who may be affected by this issue.
+
+</details>
+
+<br/>
+
 
 
 ## Our official shop if you would like to support us.  
