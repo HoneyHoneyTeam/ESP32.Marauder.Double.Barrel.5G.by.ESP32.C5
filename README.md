@@ -147,6 +147,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 <br/>
 (Last updated on 03 Nov 2025)
+<br/>
 If a wrong firmware or corrupted firmware files is used, the screen of the Unit will stay black when it turns on. We call it is bricked. Here is the "CPR" procedure to revise the device. 
 
 
@@ -256,6 +257,7 @@ These two actions must be performed simultaneously — pressing and holding the 
 <summary> Click the Triangle for more details-  </summary>
 <br/>
 <Update on Aug 2025>
+<br/>
 We believe the Double Barrel 5G is compatible with most firmware versions.
 
 However, there is one caveat. When we checked the latest Unleashed firmware (as of 10 July 2025), we were unable to locate the UART setting for changing the ESP32/8266 GPIO pins (from the default 13/14 to 15/16) in the Unleashed documentation. It’s possible this setting is referred to differently in the Unleashed firmware.
