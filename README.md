@@ -141,7 +141,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 </br>
 
 
-## How to revise a brick device 
+## How to revive a bricked device 
 <details>
 <summary> Click the Triangle for more details   </summary>
 
