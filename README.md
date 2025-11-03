@@ -249,11 +249,12 @@ These two actions must be performed simultaneously — pressing and holding the 
 
 <br/>
 
-## Could the Double Barrel 5G work with other Flipper Zero firmware besides Momentum? <Update on Aug 2025>
+## Could the Double Barrel 5G work with other Flipper Zero firmware besides Momentum? 
 
 <details>
-<summary> Click the Triangle for more details- <Update on Aug 2025> </summary>
+<summary> Click the Triangle for more details-  </summary>
 <br/>
+<Update on Aug 2025>
 We believe the Double Barrel 5G is compatible with most firmware versions.
 
 However, there is one caveat. When we checked the latest Unleashed firmware (as of 10 July 2025), we were unable to locate the UART setting for changing the ESP32/8266 GPIO pins (from the default 13/14 to 15/16) in the Unleashed documentation. It’s possible this setting is referred to differently in the Unleashed firmware.
@@ -267,11 +268,12 @@ If you’re planning to use Unleashed with the Double Barrel 5G, this could be o
 <br/>
 
 
-## Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions <Updated: 03/11/2025>
+## Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions 
 
 <details>
 <summary> Click the Triangle for more details</summary>
 <br/>
+<Updated: 03/11/2025>
 We recently discovered that when using a micro SD card with Marauder version 1.8.7, the system may freeze and become unresponsive to touch input. We currently suspect this issue is related to the 1.8.7 firmware.
 
 To resolve the problem, please avoid using this specific version of Marauder. You can either upgrade to version 1.8.9 or downgrade to another stable version. Unfortunately, upgrading via micro SD is not possible due to the freezing issue. The upgrade must be performed using a USB-C connection and the Flash Download Tool.
