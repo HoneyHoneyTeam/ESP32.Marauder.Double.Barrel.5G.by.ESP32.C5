@@ -10,8 +10,8 @@
 > [!NOTE]
 > - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
 >   
-> - 03 Nov 2025 - One quick update - Marauder 1.8.7 version with system freeze when using Micro SD card and how to solve it. -  Anson C. @ Honey Honey Team. 
-> - 01 Nov 2025 - Two major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware - by John @ Honey Honey Team.
+> - 03 Nov 2025 - 1 * update - Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions  -  Anson C. @ Honey Honey Team. 
+> - 01 Nov 2025 - 2 * major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware - by John @ Honey Honey Team.
 > - 28 Oct 2025 - First version of this Manual - by Anson C. @ Honey Honey Team
 > 
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
