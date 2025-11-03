@@ -146,8 +146,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 <summary> Click the Triangle for more details   </summary>
 
 <br/>
-(Last updated on 03 Nov 2025)
-<br/>
+
 If a wrong firmware or corrupted firmware files is used, the screen of the Unit will stay black when it turns on. We call it is bricked. Here is the "CPR" procedure to revise the device. 
 
 
