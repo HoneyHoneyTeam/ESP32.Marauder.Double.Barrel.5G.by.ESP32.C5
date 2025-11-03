@@ -254,9 +254,9 @@ These two actions must be performed simultaneously — pressing and holding the 
 ## Could the Double Barrel 5G work with other Flipper Zero firmware besides Momentum? 
 
 <details>
-<summary> Click the Triangle for more details-  </summary>
+<summary> Click the Triangle for more details </summary>
 <br/>
-<Update on Aug 2025>
+Update on Aug 2025
 <br/>
 We believe the Double Barrel 5G is compatible with most firmware versions.
 
