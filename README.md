@@ -63,6 +63,8 @@ To date, there are three main iterations of the Double Barrel, primarily disting
   	- GPS Chipset. GPS data is accessible to both Marauders.
   	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
   	- Full 3D-Printed Enclosure/Case is also included.
+  	- 1 * metal stylus
+  	- Long term tech support via email and Whatsapp Support account
 
 <br/>
 
