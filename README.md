@@ -143,7 +143,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 </br>
 
 
-## How to revive a bricked device 
+## How to upgrade firmware via USB-C // How to revive a bricked device 
 <details>
 <summary> Click the Triangle for more details   </summary>
 
