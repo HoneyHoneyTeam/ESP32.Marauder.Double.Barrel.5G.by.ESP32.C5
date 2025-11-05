@@ -119,7 +119,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 <br/>
 
-## How to upgrade Marauder firmware
+## How to upgrade Marauder firmware via Micro SD card
 <details>
 <summary> Click the Triangle for more details   </summary>
 
@@ -149,8 +149,7 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 <br/>
 
-If a wrong firmware or corrupted firmware files is used, the screen of the Unit will stay black when it turns on. We call it is bricked. Here is the "CPR" procedure to revise the device. 
-
+Here is alternative way to upgrade firmware via USB-C port. This method can also be used if the device becomes bricked due to installing the wrong firmware or corrupted firmware files. A bricked device is one that fails to boot properly—its screen remains black when powered on.
 
 ### Downloading the necessary files & App
 
