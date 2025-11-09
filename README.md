@@ -153,8 +153,8 @@ Here is alternative way to upgrade firmware via USB-C port. This method can also
 
 ### The cutting cornor way
 
-- (Download the App (Windows Version), bin files & firmware)[https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0]
-- (Firmware Update Demo Video)[https://youtu.be/XkbejfR00v0] 
+- [Download the App (Windows Version), bin files & firmware](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
+- [Firmware Update Demo Video](https://youtu.be/XkbejfR00v0)
 
 ### Downloading the necessary files & App
 
