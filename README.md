@@ -151,6 +151,11 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 Here is alternative way to upgrade firmware via USB-C port. This method can also be used if the device becomes bricked due to installing the wrong firmware or corrupted firmware files. A bricked device is one that fails to boot properly—its screen remains black when powered on.
 
+### The cutting cornor way
+
+- (Download the App (Windows Version), bin files & firmware)[https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0]
+- (Firmware Update Demo Video)[https://youtu.be/XkbejfR00v0] 
+
 ### Downloading the necessary files & App
 
 Before starting, please download the necessary software and files. In this guide, we will be performing the procedure on Microsoft Windows 11. 
@@ -223,7 +228,7 @@ Before starting, please download the necessary software and files. In this guide
 	
 - When we shipped out the Double Barrel 5G, the ESP32-C5 chipset was pre-loaded Marauder firmware Ver 1.8.5. It is plug and play for most of the users.
   
-- Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
+- Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0). You don't need to download it if you have downloaded the same ZIP from the <How to upgrade firmware via USB-C> section
   
 - [Firmware update Demo Video](https://youtu.be/ixN0UpWzVCk)
 
