@@ -221,8 +221,9 @@ Before starting, please download the necessary software and files. In this guide
 <summary> Click the Triangle for more details</summary>
 <br/>
 - When we shipped out the Double Barrel 5G, the ESP32-C5 chipset was pre-loaded Marauder firmware <esp32c5_devkit.bin>. It is plug and play for most of the users. 
-
 - If you would like to update. You could follow the following procedure.
+- Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
+- [Firmware update Demo Video](https://youtu.be/ixN0UpWzVCk) 
 
 **A short version for users experienced with Espressif’s Flash Download Tool.**
 
