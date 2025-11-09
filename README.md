@@ -151,10 +151,12 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 Here is alternative way to upgrade firmware via USB-C port. This method can also be used if the device becomes bricked due to installing the wrong firmware or corrupted firmware files. A bricked device is one that fails to boot properly—its screen remains black when powered on.
 
-### The cutting cornor way
+## The cutting cornor way
 
 - [Download the App (Windows Version), bin files & firmware](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
 - [Firmware Update Demo Video](https://youtu.be/XkbejfR00v0)
+
+## Alternatively, The Written Guide 
 
 ### Downloading the necessary files & App
 
