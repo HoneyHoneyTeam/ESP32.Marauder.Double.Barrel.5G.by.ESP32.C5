@@ -10,6 +10,7 @@
 > [!NOTE]
 > - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
 >   
+> - 16 Nov 2025 - A new video guide of upgrading firmware has been added under "How to upgrade firmware via USB-C". This one is more user-friendly.  - Anson @ Honey Honey Team
 > - 09 Nov 2025 - 2 * new firmware upgrade video guides, along with tools and file download links, have been added. - John @ Honey Honey Team
 > - 03 Nov 2025 - 1 * update - Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions  -  Anson C. @ Honey Honey Team. 
 > - 01 Nov 2025 - 2 * major updates — instructions on revising a bricked device and updating the ESP32-C5 firmware - by John @ Honey Honey Team.
@@ -152,7 +153,12 @@ To date, there are three main iterations of the Double Barrel, primarily disting
 
 Here is alternative way to upgrade firmware via USB-C port. This method can also be used if the device becomes bricked due to installing the wrong firmware or corrupted firmware files. A bricked device is one that fails to boot properly—its screen remains black when powered on.
 
-## The cutting cornor way
+## This one is more user-friendly since it is via Google Chrome and https://fzeeflasher.com/. 
+
+- [Firmware Update Demo Video](https://youtu.be/O9QHSLFvkXo)
+
+
+## The cutting cornor way, via Flash download Tool
 
 - [Download the App (Windows Version), bin files & firmware](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
 - [Firmware Update Demo Video](https://youtu.be/XkbejfR00v0)
