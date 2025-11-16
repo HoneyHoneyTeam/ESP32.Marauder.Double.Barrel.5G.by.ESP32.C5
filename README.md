@@ -235,24 +235,20 @@ Before starting, please download the necessary software and files. In this guide
 <summary> Click the Triangle for more details</summary>
 <br/>
 	
-- When we shipped out the Double Barrel 5G, the ESP32-C5 chipset was pre-loaded Marauder firmware Ver 1.8.5. It is plug and play for most of the users.
-  
-- Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0). You don't need to download it if you have downloaded the same ZIP from the <How to upgrade firmware via USB-C> section
-  
-- [Youtube link for the guide](https://youtu.be/ixN0UpWzVCk)
+- When we shipped out the Double Barrel 5G, the ESP32-C5 chipset was **pre-loaded** Marauder firmware Ver 1.8.5. It is **plug and play**. 
 
-- The Serial-USB function is based on FTDI. If the computer has trouble to recognised the serial port function, you could try to download [this driver](https://ftdichip.com/drivers/vcp-drivers/). Further technical info can be check [this link](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/get-started/establish-serial-connection.html)
 
 <Br/>
 
-**A short version for users experienced with Espressif’s Flash Download Tool.**
+**Video Guide**
 
-1. Download all the firmware files and set them up as shown in the pictures.
-2. While using the metal stylus included in the package to press and hold the button inside the hole marked as “1”, connect the 5G unit to your PC.
-3. Next,  click “Start” and let the tool complete the process.
-That’s it — done!
+1. Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0). You don't need to download it if you have downloaded the same ZIP from the <How to upgrade firmware via USB-C> section
+  
+2. [Youtube link for the guide](https://youtu.be/ixN0UpWzVCk)
 
-**The thorough version in a step-by-step fashion.**
+3. The Serial-USB function is based on FTDI. If the computer has trouble to recognised the serial port function, you could try to download [this driver](https://ftdichip.com/drivers/vcp-drivers/). Further technical info can be check [this link](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/get-started/establish-serial-connection.html)
+
+**Written Guide. The thorough version in a step-by-step fashion.**
 
 1. Download the [ESP32.C5 firmware files](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher/bins) into your PC/Mac. Link credit to [@JustCallmeKoko](https://github.com/justcallmekoko). 
 2. The firmware can be uploaded to the ESP32-C5 chipset using either "Flash Download Tool" provided by Espressif, or via a Python-based flashing script [C5_Py_Flasher](https://github.com/justcallmekoko/ESP32Marauder/tree/master/C5_Py_Flasher), more details please refer to [this guide](https://github.com/justcallmekoko/ESP32Marauder/wiki/ESP32%E2%80%90C5%E2%80%90DevKitC%E2%80%901) In this manual, we will use the “Flash Download Tool” as an example.
