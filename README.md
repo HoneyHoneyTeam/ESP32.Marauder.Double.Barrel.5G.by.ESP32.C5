@@ -155,14 +155,14 @@ Here is alternative way to upgrade firmware via USB-C port. This method can also
 
 ## 1st Option. via Google Chrome & fzeeflasher.com. User-Friendly 
 
-- [Youtube Link of the Guide](https://youtu.be/O9QHSLFvkXo)
-
+- [Youtube Link](https://youtu.be/O9QHSLFvkXo)
+<br/>
 
 ## 2nd Option (Video Guide). via Flash download Tool (Windows)
 
 - [Download the App (Windows Version), bin files & firmware](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0)
-- [Youtube Link of the Guide](https://youtu.be/XkbejfR00v0)
-
+- [Youtube Link](https://youtu.be/XkbejfR00v0)
+<br/>
 ## 2nd Option (The Written Guide). via Flash download Tool (Windows)
 
 ### Downloading the necessary files & App
@@ -203,7 +203,7 @@ Before starting, please download the necessary software and files. In this guide
 </br>
 
 
-## How to switch firmware for the standalone section, such as from Marauder to Bruce, or vice versa
+## How to switch firmware for the 1st Set Marauder (The one with the screen), such as from Marauder to Bruce, or vice versa
 <details>
 <summary> Click the Triangle for more details</summary>
 
@@ -239,7 +239,9 @@ Before starting, please download the necessary software and files. In this guide
   
 - Necessary APP(windows Version), Firmware and bins files can be download via [this dropbox link](https://www.dropbox.com/scl/fi/i5mt078kky2rm4br7wxox/flash_download_tool_3.9.9_R2.For.Double.Barrel.5G.C5.Version.zip?rlkey=4fayfh5agvm8hhbbvkqv27oes&st=51wofks6&dl=0). You don't need to download it if you have downloaded the same ZIP from the <How to upgrade firmware via USB-C> section
   
-- [Firmware update Demo Video](https://youtu.be/ixN0UpWzVCk)
+- [Youtube link for the guide](https://youtu.be/ixN0UpWzVCk)
+
+- The Serial-USB function is based on FTDI. If the computer has trouble to recognised the serial port function, you could try to download (this driver)[https://ftdichip.com/drivers/vcp-drivers/]. Further technical info can be check (this link)[https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/get-started/establish-serial-connection.html]
 
 <Br/>
 
