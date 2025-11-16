@@ -241,7 +241,7 @@ Before starting, please download the necessary software and files. In this guide
   
 - [Youtube link for the guide](https://youtu.be/ixN0UpWzVCk)
 
-- The Serial-USB function is based on FTDI. If the computer has trouble to recognised the serial port function, you could try to download (this driver)[https://ftdichip.com/drivers/vcp-drivers/]. Further technical info can be check (this link)[https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/get-started/establish-serial-connection.html]
+- The Serial-USB function is based on FTDI. If the computer has trouble to recognised the serial port function, you could try to download [this driver](https://ftdichip.com/drivers/vcp-drivers/). Further technical info can be check [this link](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c5/get-started/establish-serial-connection.html)
 
 <Br/>
 
