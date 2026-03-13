@@ -198,10 +198,7 @@ Before starting, please download the necessary software and files. In this guide
 3. Return to Flash Download Tools, select the **COM** in the lower right cornor (the one marked with 3 in the picture) and click Start.
 
 4. If everything goes as planned, the software will handle the rest in a minute.
-
-</details>
 </br>
-
 
 ## 3rd Option (The Written Guide). using Spacehuhn Web Updater (Browser)
 
