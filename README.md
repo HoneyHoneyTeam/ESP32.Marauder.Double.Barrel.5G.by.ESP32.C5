@@ -198,6 +198,211 @@ Before starting, please download the necessary software and files. In this guide
 3. Return to Flash Download Tools, select the **COM** in the lower right cornor (the one marked with 3 in the picture) and click Start.
 
 4. If everything goes as planned, the software will handle the rest in a minute.
+</br>
+
+## 3rd Option (The Written Guide). using Spacehuhn Web Updater (Browser)
+
+### Downloading the necessary files & App
+
+Before starting, please download the necessary software and files. In this guide, we will be performing the procedure using the [Spacehuhn Web Updater](https://esp.huhn.me/). 
+
+![Screenhot of the Spacehuhn Web Updater.](Assets/images/Spacehuhn_Web_Updater.png)
+
+- Four Marauder files from [the Marauder GitHub](https://github.com/justcallmekoko/ESP32Marauder/wiki/update-firmware#esp32-marauder-v4-v6-v7-kit-mini-wifi-dev-board-pro), from the "ESP32 Marauder v4, v6, Kit, Mini" column:
+
+1. Bootloader
+2. Partitions
+3. Boot App
+4. Firmware (any version you prefer, preferably the latest one)
+
+![Screenhot showing all the components of firmware to download.](Assets/images/Downloading_all_the_components_of_firmware.png)
+
+![Screenhot showing what would downloading the latest firmware for teh hardware type v6 look like.](Assets/images/Downloading_the_latest_firmware_v6.png)
+
+<br/>
+
+### Ready to go
+
+When all the files are downloaded and ready...
+1. Connecting the unit to your PC or Mac via the USB-C port on top of the device, which is marked as "A". Make sure the USB-C cable is capable for data transfer, If you are not sure what is that mean, use the cable coming with the package. 
+
+2. Next,  while **holding down the boot button (marked as "2" on the back of the device)**, with the metal stylus included with the Double Barrel, then turn on the device with on/off swith (marked as "C"). These two actions must be performed simultaneously 
+
+3. Return to Spacehuhn Web Updater and click Connect. When offered a choice to connect to a serial port, select the USB Serial ... - Paired option and click Connect.
+
+![Screenshot showing what would connecting to your device look like.](Assets/images/Connecting_to_device.png)
+
+4. When it connects successfully, the screen will display information for the 4 files at the top and at the bottom a running communications log.
+
+![Screenshot showing a successful connection established to your device.](Assets/images/Successful_Connection.png)
+
+5. You can choose to clear out the various 4 files and reselect from your downloaded files by pressing the red X to the right of each filename. Once cleared, you'll have to click and select the appropriate file from your local disk.
+
+![Screenshot showing how to select a file to upload to the device.](Assets/images/Selecting_files.png)
+
+5. Finally, click the Program button to flash the firmware onto the device. 
+
+![Screenshot showing the end of process and clicking the Program button.](Assets/images/Program.png)
+
+If everything goes as planned, the process of flashing will take at least a few minutes and you'll notice in the Output log text is scrolling by with the message "Flashing... nn%". 
+
+Wait till you get the message "To run the new firmware please reset your device." and then just power-off and power-on your device. 
+
+The hardware will soon boot into the new firmware.
+
+For reference your Output log would look like this...
+
+```
+Click Connect to start
+Connecting...
+Connected successfully.
+Try hard reset.
+Chip type ESP32
+Connected to ESP32
+MAC Address: 0C:8B:95:68:FB:B0
+Uploading stub...
+Running stub...
+Stub is now running...
+Detecting Flash Size
+FlashId: 0x16405E
+Flash Manufacturer: 5e
+Flash Device: 4016
+Auto-detected Flash size: 4MB
+Image header, Magic=0xE9, FlashMode=0x02, FlashSizeFreq=0x2F
+Writing data with filesize: 16576
+Erase size 16576, blocks 2, block size 0x4000, offset 0x1000, encrypted no
+Flashing... 98%
+Flashing... 100%
+Took 3230ms to write 16576 bytes
+Erase size 0, blocks 0, block size 0x4000, offset 0x0000, encrypted no
+Image header, Magic=0xAA, FlashMode=0x01, FlashSizeFreq=0x02
+Writing data with filesize: 3072
+Erase size 3072, blocks 1, block size 0x4000, offset 0x8000, encrypted no
+Flashing... 100%
+Took 1583ms to write 3072 bytes
+Erase size 0, blocks 0, block size 0x4000, offset 0x0000, encrypted no
+Image header, Magic=0x01, FlashMode=0x00, FlashSizeFreq=0x00
+Writing data with filesize: 8192
+Erase size 8192, blocks 1, block size 0x4000, offset 0xE000, encrypted no
+Flashing... 100%
+Took 1584ms to write 8192 bytes
+Erase size 0, blocks 0, block size 0x4000, offset 0x0000, encrypted no
+Image header, Magic=0xE9, FlashMode=0x02, FlashSizeFreq=0x2F
+Writing data with filesize: 1753520
+Erase size 1753520, blocks 108, block size 0x4000, offset 0x10000, encrypted no
+Flashing... 0%
+Flashing... 1%
+Flashing... 2%
+Flashing... 3%
+Flashing... 4%
+Flashing... 5%
+Flashing... 6%
+Flashing... 7%
+Flashing... 8%
+Flashing... 9%
+Flashing... 10%
+Flashing... 11%
+Flashing... 12%
+Flashing... 13%
+Flashing... 14%
+Flashing... 14%
+Flashing... 15%
+Flashing... 16%
+Flashing... 17%
+Flashing... 18%
+Flashing... 19%
+Flashing... 20%
+Flashing... 21%
+Flashing... 22%
+Flashing... 23%
+Flashing... 24%
+Flashing... 25%
+Flashing... 26%
+Flashing... 27%
+Flashing... 28%
+Flashing... 28%
+Flashing... 29%
+Flashing... 30%
+Flashing... 31%
+Flashing... 32%
+Flashing... 33%
+Flashing... 34%
+Flashing... 35%
+Flashing... 36%
+Flashing... 37%
+Flashing... 38%
+Flashing... 39%
+Flashing... 40%
+Flashing... 41%
+Flashing... 42%
+Flashing... 42%
+Flashing... 43%
+Flashing... 44%
+Flashing... 45%
+Flashing... 46%
+Flashing... 47%
+Flashing... 48%
+Flashing... 49%
+Flashing... 50%
+Flashing... 51%
+Flashing... 52%
+Flashing... 53%
+Flashing... 54%
+Flashing... 55%
+Flashing... 56%
+Flashing... 56%
+Flashing... 57%
+Flashing... 58%
+Flashing... 59%
+Flashing... 60%
+Flashing... 61%
+Flashing... 62%
+Flashing... 63%
+Flashing... 64%
+Flashing... 65%
+Flashing... 66%
+Flashing... 67%
+Flashing... 68%
+Flashing... 69%
+Flashing... 70%
+Flashing... 71%
+Flashing... 71%
+Flashing... 72%
+Flashing... 73%
+Flashing... 74%
+Flashing... 75%
+Flashing... 76%
+Flashing... 77%
+Flashing... 78%
+Flashing... 79%
+Flashing... 80%
+Flashing... 81%
+Flashing... 82%
+Flashing... 83%
+Flashing... 84%
+Flashing... 85%
+Flashing... 85%
+Flashing... 86%
+Flashing... 87%
+Flashing... 88%
+Flashing... 89%
+Flashing... 90%
+Flashing... 91%
+Flashing... 92%
+Flashing... 93%
+Flashing... 94%
+Flashing... 95%
+Flashing... 96%
+Flashing... 97%
+Flashing... 98%
+Flashing... 99%
+Flashing... 99%
+Flashing... 100%
+Took 173365ms to write 1753520 bytes
+Erase size 0, blocks 0, block size 0x4000, offset 0x0000, encrypted no
+Done!
+To run the new firmware please reset your device.
+```
 
 </details>
 </br>
