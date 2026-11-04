@@ -8,8 +8,7 @@
 ![Alt text](Assets/images/Black.Back.Without.jpg)
 
 > [!NOTE]
-> - Batch 1 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 29 Oct 2025, and will ship out on Friday 31 Oct 2025
->   
+> - 04 Nov 2026 - [Double Barrel V3 has been released](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/). The manual and video materials are currently being reorganized to provide a better reading and search experience.
 > - 16 Nov 2025 - A new video guide of upgrading firmware has been added under "How to upgrade firmware via USB-C". This one is more user-friendly.  - Anson @ Honey Honey Team
 > - 09 Nov 2025 - 2 * new firmware upgrade video guides, along with tools and file download links, have been added. - John @ Honey Honey Team
 > - 03 Nov 2025 - 1 * update - Marauder v1.8.7 Freezes When Using a Micro SD Card — Causes and Solutions  -  Anson C. @ Honey Honey Team. 
@@ -21,51 +20,78 @@
 <br/>
 
 
-## What is ESP32 Marauder - Double Barrel 5G? 
-First of all, what is the [ESP32 Marauder Double Barrel](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel)? 
+## Double Barrel 5G V3 — Dual ESP32-C5 Marauder System 
 
-"Double Barrel" refers to the fact that the device runs two separate Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
+In early 2025, we released the first version of the Double Barrel 5G, featuring the BW16 / RTL8720DN chipset. It was designed to provide Flipper Zero users with a complete, user-friendly solution for working with 5 GHz Wi-Fi. 
 
-Previously, the Marauder firmware could only handle 2.4 GHz Wi-Fi due to the limitations of legacy ESP32 chipsets. To overcome this restriction, in early 2025 we implemented the BW16 Kit / RTL8720DN chipset, enabling 5 GHz Wi-Fi capabilities for the 5G cousin of Double Barrel (ESP32 Marauder - Double Barrel 5G - BW16).
+In September 2025, we transitioned the Double Barrel 5G V2 to the ESP32-C5 chipset, offering broader compatibility and better support for ESP32 Marauder firmware. By December 2025, the majority of Double Barrel 5G units were based on the ESP32-C5 platform. 
 
-Now, with the introduction of the ESP32-C5 chipset, the 5 GHz limitation of the Marauder firmware has been lifted. As a result, we are moving the Double Barrel 5G forward with this new chipset (ESP32 Marauder - Double Barrel 5G - ESP32-C5), 
+Now, the Double Barrel 5G has evolved to V3, introducing a significant internal upgrade: both onboard Marauder systems are now 2.4 GHz and 5 GHz Wi-Fi capable. 
 
 For more technical details, please refer to the following comparison chart.
 
 <br/>
 
+## Two Independent Marauder Systems 
+
+The Double Barrel 5G V3 features two independent Marauder systems, both powered by the ESP32-C5-WROOM-1U-N8R8 chipset. 
+
+- **Standalone touchscreen Marauder**: The first system features an onboard touchscreen and can operate independently, without requiring a Flipper Zero. 
+
+- **Flipper Zero-controlled Marauder**: The second system connects to and is controlled by the Flipper Zero. 
+
+Both systems can operate simultaneously, allowing you to run two separate Marauder tasks at the same time. This also enables dual WarDriving operations. 
+
+The unit additionally features **onboard GPS and Sub-GHz support**, providing further functionality in a single integrated package. 
+
+<br/>
+
+## Why Two Marauder Systems? 
+
+ESP32 Marauder firmware generally operates as a linear system/firmware, meaning each device can perform only one primary task at a time. 
+
+This limitation is the core idea behind the Double Barrel design. By integrating two independent Marauder systems into one unit, users can dedicate each system to a different task and run them concurrently, rather than having to stop one task before starting another. 
+
+For example, one system can be dedicated to network testing while the second performs a separate monitoring or scanning task. 
+
 ## Technical specification comparison between Double Barrel models
 
-To date, there are three main iterations of the Double Barrel, primarily distinguished by the chipset each version uses.
+For a detailed breakdown of the differences between hardware revisions, please refer to the comparison chart in the product listing photos and the individual user manuals. 
 
-![Alt text](Assets/images/Comparison.jpg)
+![Alt text](Assets/images/inComparisonChart.11.2026.png)
 
-## Specification of the ESP32 Marauder Double Barrel 5G
+<br/>
+
+## Specification of the ESP32 Marauder Double Barrel 5G V3 
 
 
-- **The first Marauder comes with:**
-	- ESP32 chipset with an external antenna
+- **The Standalone Marauder comes with  :**
+	- C5-WROOM-1U-N8R8 with an external antenna,
+    - Onboard 8MB ram & 8MB flash version for upgarde longevity
+    - Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication, on multiple networks simultaneously, recommending on maximum 2 networks at the same time for optimal performance.   
 	- A 2.8-inch touch screen
 	- An 800mAh embedded battery
 	- Onboard GPS access
 	- Micro SD card slot, for updating firmware and data storage (Port C)
-    - ESP32 refresher embedded, alternative way for updating firmware	
 	- USB-C port for charging and access to ESP32 refresher (Port A)
+    - WarDrive is fully functional
   	- This part of the device can funcation as a standalone device (i.e., you can use it without Flipper Zero).
-   	- The hardware version of this marauder is V6
+   	- The hardware version of this marauder is V8
 
-- **ESP32-C5 chipset is controlled by the Flipper Zero, it comes with**
-  	- ESP32-C5 chipset with an external antenna
-  	- Pre-loaded with Marauder firmware
+- **The Flipper Zero-controlled Marauder comes with**
+  	- ESP32-C5-WROOM-1U-N8R8 with an external antenna, 
+  	- Onboard 8MB ram & 8MB flash version for upgarde longevity 
   	- ESP32 fresher function has been embedded. Updating firmware can be used via USB-C port directly (Port B)
-
+  	- Micro SD card slot, for data storage & Firmware update (Port D)
+    - WarDrive is fully functional
+  	- Marauder firmware version is ESP32-C5-DevKitC-1
+  	
 - **Others:**
-	- USB-C Ports for onboard battery charging (Port A).
- 	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
-  	- GPS Chipset. GPS data is accessible to both Marauders.
-  	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
-  	- Full 3D-Printed Enclosure/Case is also included.
-  	- 1 * metal stylus
+ 	- **CC1101 Chipset(433 MHz)**, supporting up to 10 dB output per antenna.
+  	- **GPS Chipset**. GPS data is accessible to both Marauders.
+  	- **WarDrive** on both Marauder units can be ran simultaneously 
+  	- **Four Antennas**: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
+  	- **Full 3D-Printed Enclosure/Case** is also included.
   	- Long term tech support via email and Whatsapp Support account
 
 <br/>
