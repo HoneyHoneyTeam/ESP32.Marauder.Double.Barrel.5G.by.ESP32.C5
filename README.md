@@ -98,8 +98,25 @@ For a detailed breakdown of the differences between hardware revisions, please r
 
 ## Technical Guide - updating ongoing - 15.11.2026
 
+#### 1️⃣ GPIO setting
+
+The initial GPIO configuration is no longer required for Double Barrel V2 and V3. The following demonstration is provided for reference and backup purposes only, should you ever need it.
 
 ![Alt text](Assets/images/GPIO.Setting.gif)
+
+<br/>
+
+#### 2️⃣ GPS Access via Flipper Zero (Double Barrel V2 and V3) 
+
+**Important:** The standalone GPS app on Flipper Zero is not compatible with Double Barrel V2 and V3. To access GPS data, please follow the guide below.
+
+**Privacy note:** GPS data has been intentionally hidden in this guide for privacy reasons.
+
+![Alt text](Assets/images/GPS.data.Demo.gif)
+
+<br/>
+
+#### 3️⃣ Firmware update guide
 
 <table>
   <tr>
@@ -108,23 +125,13 @@ For a detailed breakdown of the differences between hardware revisions, please r
     <th>Double Barrel V3</th>
   </tr>
   <tr>
-    <td>GPIO Setting</td>
-    <td colspan="2">![Alt text](Assets/images/GPIO.Setting.gif)</td>
-  </tr>
-  <tr>
-    <td>GPS data demo</td>
-	<td colspan="2">![Alt text](Assets/images/GPS.data.Demo.gif)</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Firmware version for Touch screen Marauder (1st)</td>
+    <td>Marauder Firmware version for Touchscreen Marauder</td>
     <td>V6</td>
     <td>V8</td>
   </tr>
   <tr>
-    <td>Firmware Version for Flipper-control Marauder</td>
+    <td>Marauder Firmware Version for Flipper-control Marauder</td>
     <td colspan="2">ESP32-C5-DevKitC-1</td>
-
   </tr>
   <tr>
     <td>Firmware update demo via MicroSD</td>
@@ -137,7 +144,7 @@ For a detailed breakdown of the differences between hardware revisions, please r
     <td>Video Link</td>
   </tr>
   <tr>
-    <td>Manual Link</td>
+    <td>Written Manual Link</td>
     <td><a href="/releases#release-V2">V2</a></td>
     <td><a href="/releases#release-V3">V3</a></td>
   </tr>
