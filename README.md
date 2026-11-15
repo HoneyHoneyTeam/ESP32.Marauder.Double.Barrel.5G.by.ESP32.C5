@@ -145,7 +145,7 @@ The initial GPIO configuration is no longer required for Double Barrel V2 and V3
   </tr>
   <tr>
     <td>Written Manual Link</td>
-    <td><a href="/releases#release-V2">V2</a></td>
+    <td><a href="https://github.com/HoneyHoneyTeam/ESP32.Marauder.Double.Barrel.5G.by.ESP32.C5/releases#release-V2">V2</a></td>
     <td><a href="url">V3</a></td>
   </tr>
 </table>
